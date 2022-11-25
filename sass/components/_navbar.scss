@@ -1,0 +1,52 @@
+.navbar{    
+    @include pGap(15px,15px,0px,0px);
+    
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                padding-left: 15px;
+                padding-right: 15px;
+                @include fonts(Inter,400,18px,$sec_color);
+                text-transform: capitalize;
+                transition: all linear .3s;
+                &:hover{
+                    color: $other_color;
+                }
+            }
+        }
+    }
+    
+    .nav-btn{
+        
+        button{
+            @include pGap(15px,15px,42px,42px);
+            background-color: $primary_bgcolor;
+            @include fonts(Inter,600,20px,#FFFFFF);
+            border: none;
+            border-radius: 10px;
+            text-transform: capitalize;
+        }
+    }  
+
+}
+
+.navbar-sticky{
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: sticky 1s linear;
+    z-index: 999;
+    border-bottom: 1px solid $primary_bgcolor;
+}
+    
+@keyframes sticky{
+    from {
+        top: -100px;
+    }
+
+    to {
+        top: 0;
+    }
+}

@@ -1,0 +1,26 @@
+#footer{
+    @include pGap(150px,50px,0,0);
+    .agenc-item{
+        p{
+            padding-top: 30px;
+            @include fonts(Inter,400,16px,$sec_color);
+            line-height: 26px;
+            padding-right: 50px;
+        }
+    }
+
+    .footer-text{
+        padding-top: 22px;
+        h5{
+            @include fonts(Inter,600,20px,$primary_color);
+            padding-bottom: 40px;
+        }
+
+        p{
+            padding-bottom: 30px;
+            a{
+                @include fonts(Inter,400,16px,$sec_color);
+            }
+        }
+    }
+}

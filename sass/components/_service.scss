@@ -1,0 +1,41 @@
+#service{
+    padding-bottom: 103px;
+    .header{
+        padding-bottom: 50px;
+        h3{
+            @include fonts(Inter,700,45px,$primary_color);
+            padding-bottom: 30px;
+            text-transform: capitalize;
+        }
+
+        p{
+            @include fonts(Inter,400,16px,$sec_color);
+            line-height: 26px;
+        }
+    }
+
+    .service-item {
+        transition: all linear .3s;
+        &:hover{
+            box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.059);
+            border-radius: 20px;
+        }
+        @include pGap (47px,47px,0,0);
+        .service-icon{
+            padding-bottom: 40px;
+        }
+
+        .service-text{
+            h5{
+                @include fonts(Inter,700,25px,$primary_color);
+                text-transform: capitalize;
+            }
+
+            p{
+                @include fonts(Inter,400,16px,$sec_color);           
+                line-height: 26px;     
+                @include pGap (20px,0,49px,49px);
+            }
+        }
+    }    
+}

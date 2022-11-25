@@ -1,0 +1,32 @@
+#credit{
+    padding-bottom: 46px;
+    .credit{
+        border-top: 2px solid #E8E8E8;
+        padding-bottom: 20px;
+        h6{
+            padding-top: 30px;
+            margin-bottom: 0;
+            @include fonts(Inter,400,16px,$sec_color);
+        }
+    }
+}
+
+.btt {
+    background-color: #6A4DF4;
+    border-radius: 50%;
+    line-height: 36px;
+    text-align: center;
+    position: fixed;
+    display: none;
+    cursor: pointer;
+    height: 40px;
+    bottom: 20px;
+    width: 40px;
+    color: #fff;
+    right: 20px;
+
+    svg{
+            transform: rotate(180deg);
+            width: 30px;
+    }
+}

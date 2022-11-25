@@ -1,0 +1,44 @@
+#recent_work{
+    @include pGap(150px,184px,0,0);
+    background-color: $sec_bgcolor;
+    .header{
+        padding-bottom: 50px;
+        h3{
+            @include fonts(Inter,700,45px,$primary_color);
+            padding-bottom: 30px;
+            text-transform: capitalize;
+        }
+
+        p{
+            @include fonts(Inter,400,16px,$sec_color);
+            line-height: 26px;
+        }
+    }
+
+    .work-inner{
+        margin-bottom: 24px;
+    }
+
+    .work-item{
+        background-color: #ffffff;
+        border-radius: 20px;
+        .work-img{
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .work-text{
+            h5{
+                @include fonts(Inter,700,20px,$primary_color);
+                text-transform: capitalize;
+                @include pGap (30px,0,0px,0px);
+            }
+
+            p{
+                @include fonts(Inter,400,16px,$sec_color);           
+                line-height: 26px;     
+                @include pGap (10px,30px,42px,42px);
+            }
+        }
+    }
+}

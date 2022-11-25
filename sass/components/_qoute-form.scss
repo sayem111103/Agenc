@@ -1,0 +1,61 @@
+#qoute-form{
+    background-color: #F3F3F3;
+    @include pGap(150px,150px,0,0);
+
+    .qoute-text-item{
+        padding-top: 177px;
+        h4{
+            @include fonts(Inter,700,45px,$primary_color);
+            line-height: 54px;
+        }
+        p{
+            @include fonts(Inter,400,16px,$sec_color);
+            line-height: 26px;
+            padding-top: 10px;
+            margin-bottom: 0;
+        }
+    }
+
+    .Q-form{
+        background-color: #fff;
+        @include pGap(60px,60px,0px,0px);
+        border-radius: 20px;
+        h3{
+            @include fonts(Inter,700,30px,$primary_color);
+            padding-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        .Q-form-item{
+            @include pGap(0px,0px,43px,43px);
+            .form-field{
+                padding-bottom: 20px;
+                label{
+                    @include fonts(Inter,500,16px,$primary_color);
+                    padding-bottom: 10px;
+                    text-transform: capitalize;
+                    padding-left: 5px;
+                }
+                input{
+                    display: block;
+                    @include fonts(Inter,400,16px,#D0D0D0);
+                    @include pGap(19px,19px,23px,0px);
+                    border-radius: 10px;
+                    border: 1px solid #E8E8E8;
+                    &:focus-visible{
+                        outline: none;
+                    }
+                }
+
+                button{
+                    @include pGap(19px,19px,0,0);
+                    border-radius: 10px;
+                    background-color: #6A4DF4;
+                    border: none;
+                    text-transform: capitalize;
+                    @include fonts(Inter,600,20px,#fff);
+                }
+            }   
+        }      
+    }
+}

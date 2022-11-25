@@ -1,0 +1,13 @@
+@mixin pGap($pt,$pb,$pl,$pr) {
+    padding-bottom: $pb;
+    padding-right: $pr;
+    padding-left: $pl;
+    padding-top: $pt;
+}
+
+@mixin mGap($mt,$mb,$ml,$mr) {
+    margin-bottom: $mb;
+    margin-right: $mr;
+    margin-left: $ml;
+    margin-top: $mt;
+}
